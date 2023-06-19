@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+    color: #121517;
+}
+
+body {
+    background-color: #EDEEF0;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 10px;
+    margin: 20px 150px;
+}
+.grid-item {
+    background-color: #2A3036;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    height: 315px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.item1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 700px;
+    color: #FAFEF1;
+    overflow: hidden;
+    position: relative;
+}
+.item1 > div{
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    height: 1015px;
+    width: 1015px;
+}
+.circle1{
+  bottom: -500px;
+  right: -50px;
+  background-color: rgba(59, 62, 65, 0.5);
+}
+.circle2{
+    bottom: -550px;
+    right: -0px;
+    background-color: rgba(147, 154, 160, 0.5);
+
+}
+.circle3{
+    bottom: -600px;
+    right: 50px;
+    background-color: #2A3036;
+
+}
+.item2 {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    position: relative;
+    width: 750px;
+}
+.item2 .img-wrapper {
+    height: 315px;
+    width: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.item3,
+.item4,
+.item1 {
+    width: 315px;
+}
+.item3,
+.item4 {
+    background-color: #ffffff;
+}
+
+.item5 {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1CCC5;
+}
+
+.item6 {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    background-color: #3E4FF7;
+    text-align: left;
+    padding:20px 100px ;
+}
+.item6 > p, .item6 > h3{
+    color: #FAFEF1;
+
+}
+.item6 p, .item3 p{
+    font-size: 0.8em;
+}
+a:link{
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.button {
+    background-color: #EDEEF0;
+    border: 2px solid #EDEEF0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    height: 40px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+ /* Wordle.html start*/
+:root{
+   
+    --default: #121213;
+    --empty: #3a3a3c;
+    --wrong: #b59f3b;
+    --right: #538d4e;
+}
+
+#wordle{
+    background: var(--default);
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 110px;
+}
+h2.message{
+    margin-top: -20px;
+}
+a > h2{
+    margin-top: 40px;
+}
+#game {
+    display: grid;
+    place-items:  center;
+    width: 100%;
+    height: 600px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
+}   
+
+.box{
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--empty);
+    margin: 4px;
+    color: white;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+}
+
+.box.empty{
+    background: var(--empty);
+}
+.box.wrong{
+    background:var(--wrong);
+}
+.box.right{
+    background: var(--right);
+}
+ /* Wordle.html End*/
+
+/* tic-tac-toe Start */
+
+#tictactoe{
+    background-color: #2A3036;
+}
+
+h1, #info ,.back{
+    text-align: center;
+    color: #EDEEF0;
+}
+.gameContainer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 237px;
+    margin: auto;
+    box-shadow: 0 0 0 2px;
+    cursor: pointer;
+    font-size: 75px;
+    background-color: #EDEEF0;
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    line-height: 75px;
+}
+
+/* tic-tac-toe End */
